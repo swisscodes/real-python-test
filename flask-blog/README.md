@@ -1,0 +1,1 @@
+This is a flask blog we are creating from real python lesson 2
