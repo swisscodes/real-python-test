@@ -4,7 +4,7 @@
 # imports
 from flask import Flask, render_template, request, session,\
                   flash, redirect, url_for, g
-
+    
 import sqlite3
 from  functools import wraps
 
@@ -81,6 +81,3 @@ def add():
         g.db.close()
         flash('New entry was successfully posted!')
         return redirect(url_for('main'))
-
-if __name__ == '__main__':
-    app.run(debug=True)
